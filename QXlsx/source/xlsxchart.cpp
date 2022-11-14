@@ -7,10 +7,10 @@
 #include <QXmlStreamWriter>
 #include <QDebug>
 
-#include "xlsxchart_p.h"
-#include "xlsxworksheet.h"
-#include "xlsxcellrange.h"
-#include "xlsxutility_p.h"
+#include "QXlsx/xlsxchart_p.h"
+#include "QXlsx/xlsxworksheet.h"
+#include "QXlsx/xlsxcellrange.h"
+#include "QXlsx/xlsxutility_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

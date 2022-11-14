@@ -7,7 +7,7 @@
 #include <QFile>
 #include <QBuffer>
 
-#include "xlsxrelationships_p.h"
+#include "QXlsx/xlsxrelationships_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

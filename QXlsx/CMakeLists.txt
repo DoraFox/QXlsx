@@ -14,10 +14,9 @@ set(CMAKE_AUTOMOC ON)
 include(GNUInstallDirs)
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Gui REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} 5.9 COMPONENTS Core Gui REQUIRED)
-set(EXPORT_NAME QXlsxQt${QT_VERSION_MAJOR})
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Gui REQUIRED)
 
-if (QT_VERSION_MAJOR EQUAL 6)
+if (QT_MAJOR_VERSION EQUAL 6)
     set(CMAKE_CXX_STANDARD 17 CACHE STRING "")
 else()
     set(CMAKE_CXX_STANDARD 11 CACHE STRING "")
@@ -31,7 +30,7 @@ if(NOT DEFINED ${QXLSX_PARENTPATH})
 endif(NOT DEFINED ${QXLSX_PARENTPATH})
 
 if(NOT DEFINED ${QXLSX_HEADERPATH})
-	set(QXLSX_HEADERPATH ${CMAKE_CURRENT_SOURCE_DIR}/../QXlsx/header/)
+        set(QXLSX_HEADERPATH ${CMAKE_CURRENT_SOURCE_DIR}/../QXlsx/header/QXlsx/)
 endif(NOT DEFINED ${QXLSX_HEADERPATH})
 
 if(NOT DEFINED ${QXLSX_SOURCEPATH})
@@ -81,57 +80,57 @@ set(SRC_FILES
     source/xlsxdocument.cpp
     source/xlsxrelationships.cpp
     source/xlsxutility.cpp
-    header/xlsxabstractooxmlfile_p.h
-    header/xlsxchartsheet_p.h
-    header/xlsxdocpropsapp_p.h
-    header/xlsxformat_p.h
-    header/xlsxsharedstrings_p.h
-    header/xlsxworkbook_p.h
-    header/xlsxabstractsheet_p.h
-    header/xlsxcolor_p.h
-    header/xlsxdocpropscore_p.h
-    header/xlsxmediafile_p.h
-    header/xlsxsimpleooxmlfile_p.h
-    header/xlsxworksheet_p.h
-    header/xlsxcellformula_p.h
-    header/xlsxconditionalformatting_p.h
-    header/xlsxdocument_p.h
-    header/xlsxnumformatparser_p.h
-    header/xlsxstyles_p.h
-    header/xlsxzipreader_p.h
-    header/xlsxcell_p.h
-    header/xlsxcontenttypes_p.h
-    header/xlsxdrawinganchor_p.h
-    header/xlsxrelationships_p.h
-    header/xlsxtheme_p.h
-    header/xlsxzipwriter_p.h
-    header/xlsxchart_p.h
-    header/xlsxdatavalidation_p.h
-    header/xlsxdrawing_p.h
-    header/xlsxrichstring_p.h
-    header/xlsxutility_p.h
+    header/QXlsx/xlsxabstractooxmlfile_p.h
+    header/QXlsx/xlsxchartsheet_p.h
+    header/QXlsx/xlsxdocpropsapp_p.h
+    header/QXlsx/xlsxformat_p.h
+    header/QXlsx/xlsxsharedstrings_p.h
+    header/QXlsx/xlsxworkbook_p.h
+    header/QXlsx/xlsxabstractsheet_p.h
+    header/QXlsx/xlsxcolor_p.h
+    header/QXlsx/xlsxdocpropscore_p.h
+    header/QXlsx/xlsxmediafile_p.h
+    header/QXlsx/xlsxsimpleooxmlfile_p.h
+    header/QXlsx/xlsxworksheet_p.h
+    header/QXlsx/xlsxcellformula_p.h
+    header/QXlsx/xlsxconditionalformatting_p.h
+    header/QXlsx/xlsxdocument_p.h
+    header/QXlsx/xlsxnumformatparser_p.h
+    header/QXlsx/xlsxstyles_p.h
+    header/QXlsx/xlsxzipreader_p.h
+    header/QXlsx/xlsxcell_p.h
+    header/QXlsx/xlsxcontenttypes_p.h
+    header/QXlsx/xlsxdrawinganchor_p.h
+    header/QXlsx/xlsxrelationships_p.h
+    header/QXlsx/xlsxtheme_p.h
+    header/QXlsx/xlsxzipwriter_p.h
+    header/QXlsx/xlsxchart_p.h
+    header/QXlsx/xlsxdatavalidation_p.h
+    header/QXlsx/xlsxdrawing_p.h
+    header/QXlsx/xlsxrichstring_p.h
+    header/QXlsx/xlsxutility_p.h
 )
 
 set(QXLSX_PUBLIC_HEADERS
-    header/xlsxabstractooxmlfile.h
-    header/xlsxabstractsheet.h
-    header/xlsxabstractsheet_p.h
-    header/xlsxcellformula.h
-    header/xlsxcell.h
-    header/xlsxcelllocation.h
-    header/xlsxcellrange.h
-    header/xlsxcellreference.h
-    header/xlsxchart.h
-    header/xlsxchartsheet.h
-    header/xlsxconditionalformatting.h
-    header/xlsxdatavalidation.h
-    header/xlsxdatetype.h
-    header/xlsxdocument.h
-    header/xlsxformat.h
-    header/xlsxglobal.h
-    header/xlsxrichstring.h
-    header/xlsxworkbook.h
-    header/xlsxworksheet.h
+    header/QXlsx/xlsxabstractooxmlfile.h
+    header/QXlsx/xlsxabstractsheet.h
+    header/QXlsx/xlsxabstractsheet_p.h
+    header/QXlsx/xlsxcellformula.h
+    header/QXlsx/xlsxcell.h
+    header/QXlsx/xlsxcelllocation.h
+    header/QXlsx/xlsxcellrange.h
+    header/QXlsx/xlsxcellreference.h
+    header/QXlsx/xlsxchart.h
+    header/QXlsx/xlsxchartsheet.h
+    header/QXlsx/xlsxconditionalformatting.h
+    header/QXlsx/xlsxdatavalidation.h
+    header/QXlsx/xlsxdatetype.h
+    header/QXlsx/xlsxdocument.h
+    header/QXlsx/xlsxformat.h
+    header/QXlsx/xlsxglobal.h
+    header/QXlsx/xlsxrichstring.h
+    header/QXlsx/xlsxworkbook.h
+    header/QXlsx/xlsxworksheet.h
 )
 
 add_library(QXlsx
@@ -142,24 +141,17 @@ add_library(QXlsx
 add_library(QXlsx::QXlsx ALIAS QXlsx)
 
 target_compile_definitions(QXlsx PRIVATE
-    QT_NO_KEYWORDS
-    QT_NO_CAST_TO_ASCII
-    QT_NO_CAST_FROM_ASCII
-    QT_NO_URL_CAST_FROM_STRING
-    QT_NO_CAST_FROM_BYTEARRAY
-    QT_USE_QSTRINGBUILDER
-    QT_NO_SIGNALS_SLOTS_KEYWORDS
-    QT_USE_FAST_OPERATOR_PLUS
-    QT_DISABLE_DEPRECATED_BEFORE=0x050F00
+    -DQT_NO_KEYWORDS
+    -DQT_NO_CAST_TO_ASCII
+    -DQT_NO_CAST_FROM_ASCII
+    -DQT_STRICT_ITERATORS
+    -DQT_NO_URL_CAST_FROM_STRING
+    -DQT_NO_CAST_FROM_BYTEARRAY
+    -DQT_USE_QSTRINGBUILDER
+    -DQT_NO_SIGNALS_SLOTS_KEYWORDS
+    -DQT_USE_FAST_OPERATOR_PLUS
+    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F00
 )
-
-if (NOT WIN32)
-    # Strict iterators can't be used on Windows, they lead to a link error
-    # when application code iterates over a QVector<QPoint> for instance, unless
-    # Qt itself was also built with strict iterators.
-    # See example at https://bugreports.qt.io/browse/AUTOSUITE-946
-    target_compile_definitions(QXlsx PRIVATE QT_STRICT_ITERATORS)
-endif()
 
 target_compile_features(QXlsx INTERFACE cxx_std_11)
 
@@ -181,38 +173,39 @@ PUBLIC
 )
 
 set_target_properties(QXlsx PROPERTIES
-    OUTPUT_NAME ${EXPORT_NAME}
+    EXPORT_NAME QXlsx
     VERSION ${PROJECT_VERSION}
-    SOVERSION 0.${PROJECT_VERSION}
+    SOVERSION 0
     PUBLIC_HEADER "${QXLSX_PUBLIC_HEADERS}"
 )
 
 install(TARGETS QXlsx
-    EXPORT ${EXPORT_NAME}Targets DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT runtime
-    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT devel
-    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/QXlsx COMPONENT devel
+    EXPORT QXlsxTargets DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION bin COMPONENT runtime
+    ARCHIVE DESTINATION lib COMPONENT devel
+    PUBLIC_HEADER DESTINATION include/QXlsx COMPONENT devel
 )
 
-install(EXPORT ${EXPORT_NAME}Targets
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${EXPORT_NAME}/
-    FILE ${EXPORT_NAME}Targets.cmake
+install(EXPORT QXlsxTargets
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/QXlsx/
+    FILE QXlsxTargets.cmake
     NAMESPACE QXlsx::
     COMPONENT devel
 )
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/qxlsx-config.cmake.in
-    ${CMAKE_CURRENT_BINARY_DIR}/${EXPORT_NAME}Config.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/QXlsxConfig.cmake
     @ONLY
 )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/qxlsx-config-version.cmake.in
-    ${CMAKE_CURRENT_BINARY_DIR}/${EXPORT_NAME}ConfigVersion.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/QXlsxConfigVersion.cmake
     @ONLY
 )
 install(
     FILES
-        ${CMAKE_CURRENT_BINARY_DIR}/${EXPORT_NAME}Config.cmake
-        ${CMAKE_CURRENT_BINARY_DIR}/${EXPORT_NAME}ConfigVersion.cmake
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${EXPORT_NAME}/
+        ${CMAKE_CURRENT_BINARY_DIR}/QXlsxConfig.cmake
+        ${CMAKE_CURRENT_BINARY_DIR}/QXlsxConfigVersion.cmake
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/QXlsx/
 )
+
 include(CPackConfig)

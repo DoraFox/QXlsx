@@ -17,12 +17,12 @@
 using namespace std;
 
 // [0] include QXlsx headers 
-#include "xlsxdocument.h"
-#include "xlsxchartsheet.h"
-#include "xlsxcellrange.h"
-#include "xlsxchart.h"
-#include "xlsxrichstring.h"
-#include "xlsxworkbook.h"
+#include "QXlsx/xlsxdocument.h"
+#include "QXlsx/xlsxchartsheet.h"
+#include "QXlsx/xlsxcellrange.h"
+#include "QXlsx/xlsxchart.h"
+#include "QXlsx/xlsxrichstring.h"
+#include "QXlsx/xlsxworkbook.h"
 using namespace QXlsx;
 
 int main(int argc, char *argv[])

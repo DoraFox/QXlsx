@@ -1,6 +1,6 @@
 # QXlsx
 
-> *Read this in other languages: [English](README.md), :kr: [한국어](README.ko.md), [Russian](README.RU.md)*
+> *Read this in other languages: [English](README.md), :kr: [한국어](README.ko.md)*
 
 <p align="center"><img src="https://raw.githubusercontent.com/QtExcel/QXlsx/master/markdown.data/QXlsx-Desktop.png"></p>
 
@@ -17,7 +17,7 @@
 
 ## How to set up (Installation)
 
-- See [how to setup QXlsx project (qmake)](HowToSetProject.md)	
+- :Recommended: See [how to setup QXlsx project (qmake)](HowToSetProject.md)	
 - See [how to setup QXlsx project (cmake)](HowToSetProject-cmake.md)	
 
 ## Tested environment

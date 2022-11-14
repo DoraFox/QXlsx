@@ -1,6 +1,6 @@
 // xlsxnumformatparser.cpp
 
-#include "xlsxnumformatparser_p.h"
+#include "QXlsx/xlsxnumformatparser_p.h"
 
 #include <QtGlobal>
 #include <QString>

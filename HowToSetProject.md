@@ -4,7 +4,6 @@
 > *Read this in other languages: [English](HowToSetProject.md), :kr: [한국어](HowToSetProject.ko.md)*
 
 - Here's an easy way to apply QXlsx.
-- This works only with qmake, for cmake look at [the other doc](HowToSetProject-cmake.md).
 - Describes when to apply to Windows.
 - The method of applying it on Linux or Mac is similar, and I will write help if there is an additional request.
 - * Hi! I'm j2doll. My native language is not English and my English is not fluent. Please understand. :-)
@@ -98,12 +97,12 @@ include(./QXlsx.pri)
 
 #include <QCoreApplication>
 
-#include "xlsxdocument.h"
-#include "xlsxchartsheet.h"
-#include "xlsxcellrange.h"
-#include "xlsxchart.h"
-#include "xlsxrichstring.h"
-#include "xlsxworkbook.h"
+#include "QXlsx/xlsxdocument.h"
+#include "QXlsx/xlsxchartsheet.h"
+#include "QXlsx/xlsxcellrange.h"
+#include "QXlsx/xlsxchart.h"
+#include "QXlsx/xlsxrichstring.h"
+#include "QXlsx/xlsxworkbook.h"
 using namespace QXlsx;
 
 int main(int argc, char *argv[])

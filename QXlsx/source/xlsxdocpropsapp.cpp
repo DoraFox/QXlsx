@@ -1,6 +1,6 @@
 // xlsxdocpropsapp.cpp
 
-#include "xlsxdocpropsapp_p.h"
+#include "QXlsx/xlsxdocpropsapp_p.h"
 
 #include <QXmlStreamWriter>
 #include <QXmlStreamReader>

@@ -7,9 +7,9 @@
 #include <QXmlStreamWriter>
 #include <QDebug>
 
-#include "xlsxcellformula.h"
-#include "xlsxcellformula_p.h"
-#include "xlsxutility_p.h"
+#include "QXlsx/xlsxcellformula.h"
+#include "QXlsx/xlsxcellformula_p.h"
+#include "QXlsx/xlsxutility_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

@@ -3,7 +3,7 @@
 #include <QtGlobal>
 #include <QCryptographicHash>
 
-#include "xlsxmediafile_p.h"
+#include "QXlsx/xlsxmediafile_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

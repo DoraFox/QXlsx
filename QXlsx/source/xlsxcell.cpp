@@ -1,4 +1,4 @@
-// xlsxcell.cpp
+﻿// xlsxcell.cpp
 
 #include <cmath>
 
@@ -8,13 +8,13 @@
 #include <QDate>
 #include <QTime>
 
-#include "xlsxcell.h"
-#include "xlsxcell_p.h"
-#include "xlsxformat.h"
-#include "xlsxformat_p.h"
-#include "xlsxutility_p.h"
-#include "xlsxworksheet.h"
-#include "xlsxworkbook.h"
+#include "QXlsx/xlsxcell.h"
+#include "QXlsx/xlsxcell_p.h"
+#include "QXlsx/xlsxformat.h"
+#include "QXlsx/xlsxformat_p.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxworksheet.h"
+#include "QXlsx/xlsxworkbook.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

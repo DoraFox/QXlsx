@@ -6,9 +6,9 @@
 #include <QVector>
 #include <QList>
 
-#include "xlsxglobal.h"
-#include "xlsxcell.h"
-#include "xlsxcelllocation.h"
+#include "QXlsx/xlsxglobal.h"
+#include "QXlsx/xlsxcell.h"
+#include "QXlsx/xlsxcelllocation.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

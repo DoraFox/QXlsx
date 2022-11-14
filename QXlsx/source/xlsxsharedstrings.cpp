@@ -8,11 +8,11 @@
 #include <QDebug>
 #include <QBuffer>
 
-#include "xlsxrichstring.h"
-#include "xlsxsharedstrings_p.h"
-#include "xlsxutility_p.h"
-#include "xlsxformat_p.h"
-#include "xlsxcolor_p.h"
+#include "QXlsx/xlsxrichstring.h"
+#include "QXlsx/xlsxsharedstrings_p.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxformat_p.h"
+#include "QXlsx/xlsxcolor_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

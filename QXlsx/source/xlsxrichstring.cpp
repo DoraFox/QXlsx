@@ -5,9 +5,9 @@
 #include <QTextDocument>
 #include <QTextFragment>
 
-#include "xlsxrichstring.h"
-#include "xlsxrichstring_p.h"
-#include "xlsxformat_p.h"
+#include "QXlsx/xlsxrichstring.h"
+#include "QXlsx/xlsxrichstring_p.h"
+#include "QXlsx/xlsxformat_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 
@@ -142,7 +142,6 @@ QString RichString::toPlainString() const
 */
 QString RichString::toHtml() const
 {
-    //: Todo
     return QString();
 }
 
@@ -315,7 +314,12 @@ bool operator !=(const QString &rs1, const RichString &rs2)
 
 uint qHash(const RichString &rs, uint seed) Q_DECL_NOTHROW
 {
+#if QT_VERSION >= QT_VERSION_CHECK( 5, 0, 0 )
    return qHash(rs.d->idKey(), seed);
+#else
+   Q_UNUSED(seed);
+   return qHash(rs.d->idKey());
+#endif
 }
 
 #ifndef QT_NO_DEBUG_STREAM

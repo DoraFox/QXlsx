@@ -4,10 +4,10 @@
 #include <QXmlStreamReader>
 #include <QXmlStreamWriter>
 
-#include "xlsxdatavalidation.h"
-#include "xlsxdatavalidation_p.h"
-#include "xlsxworksheet.h"
-#include "xlsxcellrange.h"
+#include "QXlsx/xlsxdatavalidation.h"
+#include "QXlsx/xlsxdatavalidation_p.h"
+#include "QXlsx/xlsxworksheet.h"
+#include "QXlsx/xlsxcellrange.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

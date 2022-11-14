@@ -1,6 +1,6 @@
 // xlsxzipwriter.cpp
 
-#include "xlsxzipwriter_p.h"
+#include "QXlsx/xlsxzipwriter_p.h"
 
 #include <QtGlobal>
 #include <QDebug>

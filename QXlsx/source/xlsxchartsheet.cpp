@@ -5,13 +5,13 @@
 #include <QXmlStreamWriter>
 #include <QDir>
 
-#include "xlsxchartsheet.h"
-#include "xlsxchartsheet_p.h"
-#include "xlsxworkbook.h"
-#include "xlsxutility_p.h"
-#include "xlsxdrawing_p.h"
-#include "xlsxdrawinganchor_p.h"
-#include "xlsxchart.h"
+#include "QXlsx/xlsxchartsheet.h"
+#include "QXlsx/xlsxchartsheet_p.h"
+#include "QXlsx/xlsxworkbook.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxdrawing_p.h"
+#include "QXlsx/xlsxdrawinganchor_p.h"
+#include "QXlsx/xlsxchart.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

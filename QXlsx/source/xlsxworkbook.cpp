@@ -8,18 +8,18 @@
 #include <QDir>
 #include <QtDebug>
 
-#include "xlsxworkbook.h"
-#include "xlsxworkbook_p.h"
-#include "xlsxsharedstrings_p.h"
-#include "xlsxworksheet.h"
-#include "xlsxchartsheet.h"
-#include "xlsxstyles_p.h"
-#include "xlsxformat.h"
-#include "xlsxworksheet_p.h"
-#include "xlsxformat_p.h"
-#include "xlsxmediafile_p.h"
-#include "xlsxutility_p.h"
-#include "xlsxchart.h"
+#include "QXlsx/xlsxworkbook.h"
+#include "QXlsx/xlsxworkbook_p.h"
+#include "QXlsx/xlsxsharedstrings_p.h"
+#include "QXlsx/xlsxworksheet.h"
+#include "QXlsx/xlsxchartsheet.h"
+#include "QXlsx/xlsxstyles_p.h"
+#include "QXlsx/xlsxformat.h"
+#include "QXlsx/xlsxworksheet_p.h"
+#include "QXlsx/xlsxformat_p.h"
+#include "QXlsx/xlsxmediafile_p.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxchart.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

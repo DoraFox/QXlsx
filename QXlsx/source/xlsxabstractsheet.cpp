@@ -1,10 +1,10 @@
-// xlsxabstractsheet.cpp
+﻿// xlsxabstractsheet.cpp
 
 #include <QtGlobal>
 
-#include "xlsxabstractsheet.h"
-#include "xlsxabstractsheet_p.h"
-#include "xlsxworkbook.h"
+#include "QXlsx/xlsxabstractsheet.h"
+#include "QXlsx/xlsxabstractsheet_p.h"
+#include "QXlsx/xlsxworkbook.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

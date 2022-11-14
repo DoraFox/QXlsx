@@ -9,7 +9,7 @@
 #include <QDebug>
 #include <QBuffer>
 
-#include "xlsxdocpropscore_p.h"
+#include "QXlsx/xlsxdocpropscore_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

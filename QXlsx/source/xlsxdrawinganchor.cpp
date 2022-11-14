@@ -7,12 +7,12 @@
 #include <QBuffer>
 #include <QDir>
 
-#include "xlsxdrawinganchor_p.h"
-#include "xlsxdrawing_p.h"
-#include "xlsxmediafile_p.h"
-#include "xlsxchart.h"
-#include "xlsxworkbook.h"
-#include "xlsxutility_p.h"
+#include "QXlsx/xlsxdrawinganchor_p.h"
+#include "QXlsx/xlsxdrawing_p.h"
+#include "QXlsx/xlsxmediafile_p.h"
+#include "QXlsx/xlsxchart.h"
+#include "QXlsx/xlsxworkbook.h"
+#include "QXlsx/xlsxutility_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 
@@ -106,12 +106,12 @@ void DrawingAnchor::setObjectGraphicFrame(QSharedPointer<Chart> chart)
     m_objectType = GraphicFrame;
 }
 
-int DrawingAnchor::row() const
+int DrawingAnchor::row()
 {
     return -1;
 }
 
-int DrawingAnchor::col() const
+int DrawingAnchor::col()
 {
     return -1;
 }
@@ -1034,12 +1034,12 @@ DrawingOneCellAnchor::DrawingOneCellAnchor(Drawing *drawing, ObjectType objectTy
 
 }
 
-int DrawingOneCellAnchor::row() const
+int DrawingOneCellAnchor::row()
 {
     return from.row();
 }
 
-int DrawingOneCellAnchor::col() const
+int DrawingOneCellAnchor::col()
 {
     return from.col();
 }
@@ -1102,12 +1102,12 @@ DrawingTwoCellAnchor::DrawingTwoCellAnchor(Drawing *drawing, ObjectType objectTy
 
 }
 
-int DrawingTwoCellAnchor::row() const
+int DrawingTwoCellAnchor::row()
 {
     return from.row();
 }
 
-int DrawingTwoCellAnchor::col() const
+int DrawingTwoCellAnchor::col()
 {
     return from.col();
 }

@@ -10,24 +10,24 @@
 #include <QSharedPointer>
 #include <QDebug>
 
-#include "xlsxdocument.h"
-#include "xlsxdocument_p.h"
-#include "xlsxworkbook.h"
-#include "xlsxworksheet.h"
-#include "xlsxcontenttypes_p.h"
-#include "xlsxrelationships_p.h"
-#include "xlsxstyles_p.h"
-#include "xlsxtheme_p.h"
-#include "xlsxdocpropsapp_p.h"
-#include "xlsxdocpropscore_p.h"
-#include "xlsxsharedstrings_p.h"
-#include "xlsxutility_p.h"
-#include "xlsxworkbook_p.h"
-#include "xlsxdrawing_p.h"
-#include "xlsxmediafile_p.h"
-#include "xlsxchart.h"
-#include "xlsxzipreader_p.h"
-#include "xlsxzipwriter_p.h"
+#include "QXlsx/xlsxdocument.h"
+#include "QXlsx/xlsxdocument_p.h"
+#include "QXlsx/xlsxworkbook.h"
+#include "QXlsx/xlsxworksheet.h"
+#include "QXlsx/xlsxcontenttypes_p.h"
+#include "QXlsx/xlsxrelationships_p.h"
+#include "QXlsx/xlsxstyles_p.h"
+#include "QXlsx/xlsxtheme_p.h"
+#include "QXlsx/xlsxdocpropsapp_p.h"
+#include "QXlsx/xlsxdocpropscore_p.h"
+#include "QXlsx/xlsxsharedstrings_p.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxworkbook_p.h"
+#include "QXlsx/xlsxdrawing_p.h"
+#include "QXlsx/xlsxmediafile_p.h"
+#include "QXlsx/xlsxchart.h"
+#include "QXlsx/xlsxzipreader_p.h"
+#include "QXlsx/xlsxzipwriter_p.h"
 
 /*
 	From Wikipedia: The Open Packaging Conventions (OPC) is a
@@ -1327,10 +1327,10 @@ QMap<int, int> Document::getMaximalColumnWidth(int firstRow, int lastRow)
     const int defaultPixelSize = 11;    //Default font pixel size of excel?
     int maxRows = -1;
     int maxCols = -1;
-    QMap<int, int> colWidth;
-    if (!currentWorksheet()) return colWidth;
     QVector<CellLocation> cellLocation = currentWorksheet()->getFullCells(&maxRows, &maxCols);
-    
+
+    QMap<int, int> colWidth;
+
     for(int i=0; i < cellLocation.size(); i++)
     {
         int col = cellLocation.at(i).col;

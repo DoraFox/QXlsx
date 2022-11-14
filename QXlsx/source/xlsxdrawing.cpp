@@ -5,9 +5,9 @@
 #include <QXmlStreamReader>
 #include <QBuffer>
 
-#include "xlsxdrawing_p.h"
-#include "xlsxdrawinganchor_p.h"
-#include "xlsxabstractsheet.h"
+#include "QXlsx/xlsxdrawing_p.h"
+#include "QXlsx/xlsxdrawinganchor_p.h"
+#include "QXlsx/xlsxabstractsheet.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

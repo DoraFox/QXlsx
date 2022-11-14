@@ -4,8 +4,8 @@
 #include <QBuffer>
 #include <QByteArray>
 
-#include "xlsxabstractooxmlfile.h"
-#include "xlsxabstractooxmlfile_p.h"
+#include "QXlsx/xlsxabstractooxmlfile.h"
+#include "QXlsx/xlsxabstractooxmlfile_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

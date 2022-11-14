@@ -9,11 +9,11 @@
 #include <QDebug>
 #include <QBuffer>
 
-#include "xlsxglobal.h"
-#include "xlsxstyles_p.h"
-#include "xlsxformat_p.h"
-#include "xlsxutility_p.h"
-#include "xlsxcolor_p.h"
+#include "QXlsx/xlsxglobal.h"
+#include "QXlsx/xlsxstyles_p.h"
+#include "QXlsx/xlsxformat_p.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxcolor_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 
@@ -34,7 +34,12 @@ Styles::Styles(CreateFlag flag)
 #if QT_VERSION >= 0x060000 // Qt 6.0 or over
     if (QMetaType::fromName("XlsxColor").isRegistered())
 #else
-    if (QMetaType::type("XlsxColor") == QMetaType::UnknownType)
+    #if QT_VERSION >= QT_VERSION_CHECK( 5, 0, 0 ) // Qt 5 or higher
+        if (QMetaType::type("XlsxColor") == QMetaType::UnknownType)
+    #else
+        if (QMetaType::type("XlsxColor") == 0
+            || !QMetaType::isRegistered(QMetaType::type("XlsxColor")))
+    #endif
 #endif
     {
         qRegisterMetaType<XlsxColor>("XlsxColor");
@@ -49,7 +54,9 @@ Styles::Styles(CreateFlag flag)
 
         qRegisterMetaTypeStreamOperators<XlsxColor>("XlsxColor");
 
-        QMetaType::registerDebugStreamOperator<XlsxColor>();
+    #if QT_VERSION >= 0x050200 // 5.2 or higher
+            QMetaType::registerDebugStreamOperator<XlsxColor>();
+    #endif
 
 #endif
     }
@@ -1378,8 +1385,11 @@ bool Styles::loadFromXmlFile(QIODevice *device)
     return true;
 }
 
+#if QT_VERSION >= 0x050600
 QColor Styles::getColorByIndex(int idx)
 {
+    // #if QT_VERSION >= 0x050600
+
     if (m_indexedColors.isEmpty()) {
         m_indexedColors = {
             QColor(QRgba64::fromArgb32(0x000000)), QColor(QRgba64::fromArgb32(0xFFFFFF)), QColor(QRgba64::fromArgb32(0xFF0000)), QColor(QRgba64::fromArgb32(0x00FF00)),
@@ -1405,5 +1415,6 @@ QColor Styles::getColorByIndex(int idx)
         return QColor();
     return m_indexedColors[idx];
 }
+#endif
 
 QT_END_NAMESPACE_XLSX

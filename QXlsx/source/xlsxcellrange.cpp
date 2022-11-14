@@ -1,12 +1,12 @@
-// xlsxcellrange.cpp
+﻿// xlsxcellrange.cpp
 
 #include <QtGlobal>
 #include <QString>
 #include <QPoint>
 #include <QStringList>
 
-#include "xlsxcellrange.h"
-#include "xlsxcellreference.h"
+#include "QXlsx/xlsxcellrange.h"
+#include "QXlsx/xlsxcellreference.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

@@ -7,7 +7,7 @@
 #include <QBuffer>
 #include <QDebug>
 
-#include "xlsxcontenttypes_p.h"
+#include "QXlsx/xlsxcontenttypes_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

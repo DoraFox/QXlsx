@@ -4,10 +4,10 @@
 #include <QDataStream>
 #include <QDebug>
 
-#include "xlsxformat.h"
-#include "xlsxformat_p.h"
-#include "xlsxcolor_p.h"
-#include "xlsxnumformatparser_p.h"
+#include "QXlsx/xlsxformat.h"
+#include "QXlsx/xlsxformat_p.h"
+#include "QXlsx/xlsxcolor_p.h"
+#include "QXlsx/xlsxnumformatparser_p.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 

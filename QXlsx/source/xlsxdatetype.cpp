@@ -2,9 +2,9 @@
 
 #include <QtGlobal>
 
-#include "xlsxglobal.h"
-#include "xlsxutility_p.h"
-#include "xlsxdatetype.h"
+#include "QXlsx/xlsxglobal.h"
+#include "QXlsx/xlsxutility_p.h"
+#include "QXlsx/xlsxdatetype.h"
 
 QT_BEGIN_NAMESPACE_XLSX
 
